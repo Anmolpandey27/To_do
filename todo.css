@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: linear-gradient(120deg, red, blue);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+  }
+  header,
+  form {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    font-size: 40px;
+  }
+  form input,
+  form button {
+    padding: 10px;
+    border: none;
+    font-size: 24px;
+    background: rgb(250, 218, 218);
+    outline: none;
+  }
+  form button {
+    color: rgb(198, 241, 120);
+    background-color: white;
+    cursor: pointer;
+  }
+  form button:hover {
+    color: white;
+    background-color: skyblue;
+  }
+  
+  /* ----------------New List Container---------------- */
+  
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .todo-list {
+    list-style: none;
+    min-width: 25%;
+  }
+  
+  .todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: rgb(247, 197, 197);
+    color: black;
+    margin: 10px;
+    border-radius: 20px;
+  }
+  .cmpltBtn {
+    background-color: rgb(111, 244, 135);
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+  .deleteBtn {
+    background-color: rgb(248, 60, 60);
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+  
+  .todo li {
+    flex: 1;
+    padding: 0px 10px;
+  }
+  
+  .fa-trash,
+  .fa-check {
+    pointer-events: none;
+  }
+  
+  .todo-done {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
